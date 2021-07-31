@@ -63,5 +63,35 @@ func main() {
 
 	// Retos
 	// - Rectangulo, trapecio y de un círculo
-	
+
+	// Área de un rectangulo
+	fmt.Println("Calculo de área de un Rectangulo...")
+	baseRectangulo := 50
+	alturaRectangulo := 10
+	fmt.Println("base: ", baseRectangulo)
+	fmt.Println("altura: ", alturaRectangulo)
+	areaRectangulo := baseRectangulo * alturaRectangulo
+	fmt.Println("El área de un rectangulo esta dada por la formula base x altura, aplicando esta formula obtenemos: ")
+	fmt.Println("Área del rectangulo: ", areaRectangulo)
+
+	// Área de un trapecio
+	fmt.Println("Calculo de área de un Trapecio...")
+	baseMayorTrapecio := 50
+	baseMenorTrapecio := 30
+	alturaTrapecio := 20
+	fmt.Println("base mayor: ", baseMayorTrapecio)
+	fmt.Println("base menor: ", baseMenorTrapecio)
+	fmt.Println("altura: ", alturaTrapecio)
+	areaTrapecio := ((baseMayorTrapecio + baseMenorTrapecio) * alturaTrapecio) / 2
+	fmt.Println("El área de un trapecio esta dada por la suma de sus bases multiplicada por la altura y esto a su vez dividido entre dos, aplicando esta formula obtenemos: ")
+	fmt.Println("Área del Trapecio: ", areaTrapecio)
+
+	// Área de un circulo
+	fmt.Println("Calculo de área de un Círculo...")
+	const PI float64  = 3.14
+	radioCirculo := 15
+	fmt.Println("radio :", radioCirculo)
+	areaCirculo := PI * float64(radioCirculo) * float64(radioCirculo)
+	fmt.Println("El área de un circulo esta dada por la multiplicacion de la constante PI por el radio del circulo al cuadrado, aplicando esta formula obtenemos: ")
+	fmt.Println("Área del circulo: ", areaCirculo)
 }
